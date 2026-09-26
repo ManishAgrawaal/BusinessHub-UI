@@ -1,0 +1,483 @@
+/* =========================================================
+   MANISH TECHNOLOGY SOLUTION
+   Bootstrap 5 + Minimal Custom CSS
+========================================================= */
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  color: #071a39;
+  background: #ffffff;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  transition: all 0.2s ease;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/* =========================================================
+   MTS COLOR HELPERS
+========================================================= */
+
+.text-mts {
+  color: #1264e8 !important;
+}
+
+.bg-mts {
+  background-color: #1264e8 !important;
+}
+
+.bg-mts-dark {
+  background-color: #071a39 !important;
+}
+
+.border-mts {
+  border-color: #1264e8 !important;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.mts-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5ebf3;
+
+  box-shadow:
+    0 2px 12px rgba(15, 40, 80, 0.04);
+
+  z-index: 1030;
+}
+
+.mts-header .navbar {
+  min-height: 76px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+
+.mts-navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.mts-logo {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+}
+
+.mts-brand-name {
+  line-height: 1.05;
+  white-space: nowrap;
+}
+
+.mts-brand-title {
+  color: #071a39;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.mts-brand-title span {
+  color: #1264e8;
+}
+
+.mts-brand-subtitle {
+  color: #071a39;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+
+/* NAVIGATION */
+
+.mts-nav-link {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  padding: 27px 8px !important;
+
+  color: #344054 !important;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  border-bottom: 2px solid transparent;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.mts-nav-link:hover {
+  color: #1264e8 !important;
+}
+
+.mts-nav-link.active {
+  color: #1264e8 !important;
+  border-bottom-color: #1264e8;
+}
+
+
+/* =========================================================
+   HEADER BUTTONS
+========================================================= */
+
+.mts-login-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 38px;
+
+  padding: 0 16px;
+
+  background: #ffffff;
+  color: #1264e8;
+
+  border: 1px solid #b9cff0;
+  border-radius: 8px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  transition: all 0.2s ease;
+}
+
+.mts-login-btn:hover {
+  background: #1264e8;
+  color: #ffffff;
+
+  border-color: #1264e8;
+}
+
+
+.mts-primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  min-height: 38px;
+
+  padding: 0 17px;
+
+  background: #1264e8;
+  color: #ffffff;
+
+  border: 1px solid #1264e8;
+  border-radius: 8px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  box-shadow:
+    0 8px 20px rgba(18, 100, 232, 0.16);
+
+  transition: all 0.2s ease;
+}
+
+.mts-primary-btn:hover {
+  background: #0b56cf;
+  color: #ffffff;
+
+  border-color: #0b56cf;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   MOBILE HEADER
+========================================================= */
+
+.mts-header .navbar-toggler {
+  padding: 7px;
+
+  color: #071a39;
+
+  border: 0;
+}
+
+.mts-header .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+
+@media (max-width: 991.98px) {
+
+  .mts-header .navbar {
+    min-height: 68px;
+  }
+
+  .mts-logo {
+    width: 135px;
+    height: 50px;
+  }
+
+  .mts-nav-link {
+    padding: 10px 0 !important;
+    border-bottom: 0;
+  }
+
+  .mts-nav-link.active {
+    border-bottom: 0;
+  }
+
+  .mts-header .navbar-nav {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+
+}
+
+
+@media (max-width: 575.98px) {
+
+  .mts-logo {
+    width: 120px;
+    height: 45px;
+  }
+
+  .mts-header .navbar {
+    min-height: 64px;
+  }
+
+}
+
+
+/* =========================================================
+   HOME - SMALL CUSTOM ELEMENTS
+========================================================= */
+
+.mts-window-dot {
+  display: block;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #cbd5e1;
+}
+
+
+.mts-icon-box {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #1264e8;
+
+  background: #eaf3ff;
+
+  border-radius: 14px;
+}
+
+
+.mts-max-text {
+  max-width: 700px;
+}
+
+
+/* =========================================================
+   GENERAL CARD HOVER
+========================================================= */
+
+.card {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+
+/* Don't move dashboard cards */
+
+.mts-dashboard-card:hover {
+  transform: none;
+}
+
+
+/* =========================================================
+   CASE STUDIES - DASHBOARD PREVIEW
+========================================================= */
+
+.mts-dashboard-stat {
+  min-height: 68px;
+}
+
+
+.mts-dashboard-chart {
+  height: 45px;
+
+  display: flex;
+  align-items: flex-end;
+
+  gap: 8px;
+}
+
+
+.mts-dashboard-chart-bar {
+  flex: 1;
+
+  background: #cfe0fb;
+
+  border-radius: 4px 4px 0 0;
+}
+
+
+/* =========================================================
+   BUTTON POLISH
+========================================================= */
+
+.btn {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 8px 20px rgba(13, 110, 253, 0.18);
+}
+
+
+/* =========================================================
+   SECTION SPACING
+========================================================= */
+
+.mts-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  .mts-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+}
+
+
+@media (max-width: 767.98px) {
+
+  .mts-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .display-4 {
+    font-size: 2.5rem;
+  }
+
+  .display-6 {
+    font-size: 2rem;
+  }
+
+}
+
+
+@media (max-width: 575.98px) {
+
+  .display-4 {
+    font-size: 2.2rem;
+  }
+
+  .display-6 {
+    font-size: 1.8rem;
+  }
+
+}
+
+
+/* =========================================================
+   FOOTER SUPPORT
+========================================================= */
+
+.mts-footer {
+  background: #071a39;
+  color: #ffffff;
+}
+
+.mts-footer a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.mts-footer a:hover {
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid rgba(18, 100, 232, 0.3);
+  outline-offset: 2px;
+}
+@media (max-width: 991.98px) {
+  .admin-main-content {
+    margin-left: 0 !important;
+  }
+}
